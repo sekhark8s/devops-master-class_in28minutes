@@ -26,3 +26,9 @@ jobs:
   - script: echo Job-2
       echo Add other tasks to build, test, and deploy your project.
     displayName: 'Run a one-line script'
+- job : Job3
+  dependsOn: job-2
+  steps:
+  - script: echo Job-3
+      echo Add other tasks to build, test, and deploy your project.
+    displayName: 'Run a one-line script'
